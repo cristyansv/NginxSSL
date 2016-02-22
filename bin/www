@@ -7,8 +7,8 @@
 var app = require('../app');
 var debug = require('debug')('NginxSSL:server');
 var http = require('http');
-var https = require('http');
-var fs = require('fs')
+var https = require('https');
+var fs = require('fs');
 
 /**
  * Get port from environment and store in Express.
@@ -21,7 +21,8 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = https.createServer({
+var server = https.createServer(
+  {
     key: fs.readFileSync('./tls/privkey.pem'),
     cert: fs.readFileSync('./tls/cert.pem'),
     ca: fs.readFileSync('./tls/chain.pem')
