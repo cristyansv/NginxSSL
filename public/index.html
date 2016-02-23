@@ -39,5 +39,22 @@
     <img class="testImg" src="images/25.jpg" alt="" />
     <img class="testImg" src="images/26.jpg" alt="" />
     <img class="testImg" src="images/27.jpg" alt="" />
+<script type="text/javascript">
+  var imgs = document.images,
+  len = imgs.length,
+  counter = 0;
+
+  [].forEach.call( imgs, function( img ) {
+  img.addEventListener( 'load', incrementCounter, false );
+  } );
+
+  function incrementCounter() {
+  counter++;
+  if ( counter === len ) {
+      console.log( 'All images loaded!' );
+  }
+  }
+</script>
+
   </body>
 </html>
