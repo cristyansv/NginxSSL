@@ -5,7 +5,9 @@
     <title>test</title>
   </head>
   <body>
-
+    <script type="text/javascript">
+      var init = new Date();
+    </script>
     <style media="screen">
       .testImg {
         max-width: 100px;
@@ -52,6 +54,7 @@
   counter++;
   if ( counter === len ) {
       console.log( 'All images loaded!' );
+      console.log(Date.now()-init);
   }
   }
 </script>
