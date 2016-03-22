@@ -16,9 +16,16 @@ window.addEventListener('resize', function(event){
 
 
 
+
+
 svg.addEventListener('mousewheel', function(event){
     setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
 });
+
+svg.attachEvent('mousewheel', function(event){
+    setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
+});
+
 
 
 
