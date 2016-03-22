@@ -16,6 +16,7 @@ window.addEventListener('resize', function(event){
 
 function wh(event){
     setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
+    console.log(event);
 }
 
 
