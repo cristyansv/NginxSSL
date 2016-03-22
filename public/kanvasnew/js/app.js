@@ -17,18 +17,6 @@ window.addEventListener('resize', function(event){
 
 
 
-
-svg.addEventListener('mousewheel', function(event){
-    setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
-});
-
-svg.attachEvent('mousewheel', function(event){
-    setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
-});
-
-
-
-
 var appTransform = svg.createSVGTransformFromMatrix(svg.createSVGMatrix());
 var appMat = appTransform.matrix;
 canvas.transform.baseVal.appendItem(appTransform);
@@ -45,3 +33,11 @@ function setMatrix(x,y,z){
     appMat.f = y;
 
 }
+
+svg.addEventListener('mousewheel', function(event){
+    setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
+});
+
+svg.attachEvent('mousewheel', function(event){
+    setMatrix(appMat.e+=(event.deltaX*-1), appMat.f+=(event.deltaY*-1));
+});
