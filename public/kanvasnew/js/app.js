@@ -4,8 +4,8 @@ canvas = document.getElementById('canvas');
 
 
 function calcResize(event){
-    svg.style.width = window.innerWidth;
-    svg.style.height = window.innerHeight;
+    svg.style.width = window.innerWidth + "px";
+    svg.style.height = window.innerHeight + "px";
 }
 
 calcResize();
