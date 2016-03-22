@@ -34,6 +34,7 @@ function setMatrix(x,y,z){
     appMat.e = x;
     appMat.f = y;
 
+    canvas.transform.baseVal.getItem(0).setMatrix(appMat);
 }
 
 
