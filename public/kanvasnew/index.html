@@ -10,24 +10,45 @@
 </head>
 <body>
 
-    <svg id="svgApp" onmousewheel="wh(event)">
-        <defs>
-            <filter id="f1" x="0" y="0">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="15" />
-            </filter>
-        </defs>
-        <g id="canvas" x="310" y="400">
-            <g>
-                <image  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/kotzhyqfr_grad1jor_1.svg" preserveAspectRatio="none" x="0" y="0" width="612" height="792"></image>
-            </g>
-            <g>
-                <image  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/kotzhyqfr_grad1jor_2.svg" preserveAspectRatio="none" x="0" y="800" width="612" height="792"></image>
-            </g>
-            <g>
-                <image  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/kotzhyqfr_grad1jor_3.svg" preserveAspectRatio="none" x="0" y="1600" width="612" height="792"></image>
-            </g>
+<div id="ui">
+    <div id="zoom">
+        <div id="zoomIn" class="zoomButton">
+            +
+        </div>
+        <div id="zoomOut" class="zoomButton">
+             -
+        </div>
+    </div>
+
+    <!--<div id="all">-->
+        <!--O-->
+    <!--</div>-->
+
+</div>
+
+
+
+<svg id="svgApp" onmousewheel="wh(event)">
+    <defs>
+        <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="15"/>
+        </filter>
+    </defs>
+    <g id="canvas" x="310" y="400">
+        <g class="page">;
+            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/kotzhyqfr_grad1jor_1.svg"
+                   preserveAspectRatio="none" x="0" y="0" width="612" height="792"></image>
         </g>
-    </svg>
-    <script src="js/app.js"></script>
+        <g class="page">
+            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/kotzhyqfr_grad1jor_2.svg"
+                   preserveAspectRatio="none" x="0" y="800" width="612" height="792"></image>
+        </g>
+        <g class="page">
+            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/kotzhyqfr_grad1jor_3.svg"
+                   preserveAspectRatio="none" x="0" y="1600" width="612" height="792"></image>
+        </g>
+    </g>
+</svg>
+<script src="js/app.js"></script>
 </body>
 </html>

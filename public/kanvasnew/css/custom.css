@@ -11,3 +11,39 @@ body {
     overflow: hidden;
     max-width: 100%;
 }
+
+#zoom{
+    position: absolute;
+    display: flex;
+    background-color: #dee3ea;
+    border-radius: 3px;
+    border: solid 1px;
+    left: 15px;
+    top: 10px;
+    padding: 2px;
+}
+
+.zoomButton{
+    padding: 5px;
+    background-color: white;
+}
+
+#zoomIn{
+    margin-right: 2px;
+}
+
+#all{
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 4px;
+}
+
+#center{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
