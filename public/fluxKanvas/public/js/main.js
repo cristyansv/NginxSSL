@@ -20457,7 +20457,7 @@ var MatrixActions = require('../../reflux/matrixActions.jsx');
 
 var Documents = [{
     id: "kotzhyqfr_grad1jor_1",
-    src: "/images/kotzhyqfr_grad1jor_1.svg",
+    src: "./images/kotzhyqfr_grad1jor_1.svg",
     x: 0,
     y: 0,
     height: 792,
