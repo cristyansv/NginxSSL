@@ -30036,7 +30036,7 @@ var Documents = [{
 var DocumentManager = React.createClass({
     displayName: 'DocumentManager',
 
-    componentWillMount() {
+    componentWillMount: function () {
         MatrixActions.zoomBounds(Documents[0], true);
     },
     componentDidMount: function () {
