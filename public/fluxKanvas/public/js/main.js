@@ -30156,7 +30156,7 @@ var SvgCanvas = React.createClass({
     onChange: function (event, Matrix) {
         this.setState({ Matrix: Matrix });
     },
-    transformString(Matrix) {
+    transformString: function (Matrix) {
         return "matrix(" + Matrix.z + "," + "0," + "0," + Matrix.z + "," + Matrix.x + "," + Matrix.y + ")";
     },
     onScroll: function (event) {
